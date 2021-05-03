@@ -1,14 +1,14 @@
 const organizeInstructors = function(instructors) {
-  const list = {}
+  const list = {};
 
   for (let i = 0; i < instructors.length; i++) {
     if (list[instructors[i].course]) {
-      list[instructors[i].course].push(instructors[i].name)
+      list[instructors[i].course].push(instructors[i].name);
     } else {
-      list[instructors[i].course] = [instructors[i].name]
+      list[instructors[i].course] = [instructors[i].name];
     }
   }
-  return list
+  return list;
 };
 
 console.log(organizeInstructors([

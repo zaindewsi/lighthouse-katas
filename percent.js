@@ -1,13 +1,14 @@
 const urlEncode = function(text) {
-let encoded = "";
+  let encoded = "";
 
-for(let i = 0; i < text.length; i++) {
-  if (text[i] != " ") {
-    encoded += text[i]
-  } else if (text[i] === " " && i > 0 && i < text.length - 1) {
-    encoded += "%20";
-    } 
-  } return encoded
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] !== " ") {
+      encoded += text[i];
+    } else if (text[i] === " " && i > 0 && i < text.length - 1) {
+      encoded += "%20";
+    }
+  }
+  return encoded;
 };
 
 console.log(urlEncode("Lighthouse Labs"));

@@ -9,7 +9,7 @@ const repeatNumbers = function(data) {
     }
     output.push(repeat);
   }
-  return output.join(", ")
+  return output.join(", ");
 };
 
 console.log(repeatNumbers([[1, 10]]));

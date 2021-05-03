@@ -1,16 +1,16 @@
 const camelCase = function(input) {
-  let output = ""
+  let output = "";
 
   for (let i = 0; i < input.length; i++) {
     if (input[i] === " ") {
-      if((i + 1) < input.length && input[i + 1] !== " ") {
-        output += input[++i].toUpperCase()
+      if ((i + 1) < input.length && input[i + 1] !== " ") {
+        output += input[++i].toUpperCase();
       }
     } else {
-      output += input[i]
+      output += input[i];
     }
   }
-  return output
+  return output;
 };
 
 console.log(camelCase("this is a string"));
